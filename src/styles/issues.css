@@ -1,0 +1,136 @@
+/* Issues Styles */
+.issues-container {
+  background-color: white;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.issues-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.issues-header h1 {
+  color: #2c3e50;
+  margin: 0;
+  font-size: 28px;
+}
+
+.issue-form {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.issue-form input,
+.issue-form textarea,
+.issue-form select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.issue-form button {
+  align-self: flex-start;
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.filters input,
+.filters select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.filters input {
+  flex: 1;
+  min-width: 200px;
+}
+
+.issues-table {
+  overflow-x: auto;
+}
+
+.issues-table table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+.issues-table th,
+.issues-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.issues-table th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.issues-table tr:hover {
+  background-color: #f8f9fa;
+}
+
+.issues-table td {
+  font-size: 14px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 12px;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.issues-table button {
+  padding: 6px 12px;
+  margin-right: 5px;
+  font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  .issues-header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .filters {
+    flex-direction: column;
+  }
+
+  .filters input,
+  .filters select {
+    width: 100%;
+  }
+
+  .issues-table {
+    font-size: 12px;
+  }
+
+  .issues-table th,
+  .issues-table td {
+    padding: 8px;
+  }
+}
